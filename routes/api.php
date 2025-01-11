@@ -52,9 +52,12 @@ Route::get("nilaiST", [
     "nilaiST",
 ]);
 
-// Route::fallback(function () {
-//     return response()->json([
-//         'status' => 'error',
-//         'message' => 'route not found',
-//     ], Response::HTTP_NOT_FOUND);
-// });
+Route::fallback(function () {
+    return response()->json(
+        [
+            "status" => "error",
+            "message" => "route not found",
+        ],
+        Response::HTTP_NOT_FOUND
+    );
+});
