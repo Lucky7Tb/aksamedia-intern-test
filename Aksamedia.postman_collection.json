@@ -373,12 +373,11 @@
 							}
 						],
 						"url": {
-							"raw": "{{host}}/aksamedia-intern-test/api/nilaiRT",
+							"raw": "{{host}}/api/nilaiRT",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
-								"aksamedia-intern-test",
 								"api",
 								"nilaiRT"
 							]
@@ -442,7 +441,7 @@
 		},
 		{
 			"key": "prod_host",
-			"value": "http://http://103.179.254.46",
+			"value": "http://103.179.254.46",
 			"type": "string"
 		}
 	]
