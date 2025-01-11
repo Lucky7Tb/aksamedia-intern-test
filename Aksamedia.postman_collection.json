@@ -64,12 +64,10 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8000/api/logout",
-							"protocol": "http",
+							"raw": "{{host}}/api/logout",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"logout"
