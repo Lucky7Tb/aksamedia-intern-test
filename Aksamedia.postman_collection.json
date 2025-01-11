@@ -30,12 +30,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/login",
-							"protocol": "http",
+							"raw": "{{host}}/api/login",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"login"
@@ -375,11 +373,12 @@
 							}
 						],
 						"url": {
-							"raw": "{{host}}/api/nilaiRT",
+							"raw": "{{host}}/aksamedia-intern-test/api/nilaiRT",
 							"host": [
 								"{{host}}"
 							],
 							"path": [
+								"aksamedia-intern-test",
 								"api",
 								"nilaiRT"
 							]
@@ -439,6 +438,11 @@
 		{
 			"key": "host",
 			"value": "http://localhost:8000",
+			"type": "string"
+		},
+		{
+			"key": "prod_host",
+			"value": "http://http://103.179.254.46",
 			"type": "string"
 		}
 	]
