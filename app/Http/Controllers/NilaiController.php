@@ -27,7 +27,7 @@ class NilaiController extends Controller
             if (! isset($student['nilaiRt'][strtolower($rtScore->nama_pelajaran)])) {
                 $student['nilaiRt'][strtolower($rtScore->nama_pelajaran)] = 0;
             }
-            $student['nilaiRt'][strtolower($rtScore->nama_pelajaran)] = (int)$rtScore->skor;
+            $student['nilaiRt'][strtolower($rtScore->nama_pelajaran)] = (int) $rtScore->skor;
             $lastNisn = $rtScore->nisn;
         }
 
@@ -82,11 +82,11 @@ class NilaiController extends Controller
 
             $student['nama'] = $stScore->nama;
             $student['nisn'] = $stScore->nisn;
-            $student['total'] = (int)$stScore->total;
+            $student['total'] = (int) $stScore->total;
             if (! isset($student['listNilai'][strtolower($stScore->nama_pelajaran)])) {
                 $student['listNilai'][strtolower($stScore->nama_pelajaran)] = 0;
             }
-            $student['listNilai'][strtolower($stScore->nama_pelajaran)] = (int)$stScore->skor;
+            $student['listNilai'][strtolower($stScore->nama_pelajaran)] = (int) $stScore->skor;
             $lastNisn = $stScore->nisn;
         }
 
